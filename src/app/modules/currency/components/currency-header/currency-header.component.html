@@ -1,0 +1,9 @@
+<div class="header">
+  <div class="title">Currency Rate:</div>
+  <div *ngIf="currencyRates?.usd" class="usd">
+    <div class="rate">1 USD to {{ currencyRates.usd | number : '1.2-2' }} UAH</div>
+  </div>
+  <div *ngIf="currencyRates?.eur"  class="eur">
+    <div class="rate">1 EUR to {{ currencyRates.eur | number : '1.2-2' }} UAH</div>
+  </div>
+</div>

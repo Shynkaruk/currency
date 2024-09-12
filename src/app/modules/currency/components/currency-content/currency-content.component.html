@@ -1,0 +1,18 @@
+<div class="content">
+  <form [formGroup]="currencyForm">
+    <p>Amount</p>
+    <div>
+      <input onlyNumber  formControlName="baseCurrencyAmount"  required>
+      <select  formControlName="baseCurrencyCurrency">
+        <option *ngFor="let currency of currencies" [ngValue]="currency">{{ currency }}</option>
+      </select>
+    </div>
+    <p>Converted to </p>
+    <div>
+      <input onlyNumber  formControlName="convertedToAmount"  required>
+      <select  formControlName="convertedToCurrency">
+        <option *ngFor="let currency of currencies" [ngValue]="currency">{{ currency }}</option>
+      </select>
+    </div>
+  </form>
+</div>

@@ -1,0 +1,41 @@
+.content {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right:0;
+  bottom: 0;
+  padding: 20px;
+  max-width: 400px;
+  width: 400px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  box-shadow: -1px 0px 20px 0px rgba(0, 0, 0, 0.1);
+  z-index: 99999;
+
+  p {
+    display: block;
+    margin: 10px auto;
+  }
+
+  select, input {
+    padding: 10px;
+    font-size: 20px;
+    height: 65px;
+    cursor: pointer;
+  }
+
+  select {
+    border-left: 0px;
+    border-color: black;
+    vertical-align:top;
+  }
+
+  input {
+    border: 1px solid;
+    border-right: 0px;
+  }
+}
